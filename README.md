@@ -255,10 +255,7 @@ Supports `.env`, MongoDB Atlas, and REST tools like Postman, Thunder Client, or 
 
 ## 🎥 Demo Video
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=QYBE_vgmWjg" target="_blank">
-    <img src="https://img.youtube.com/vi/QYBE_vgmWjg/0.jpg" width="500" alt="Watch Demo on YouTube">
-  </a>
+<p align="center"> <a href="https://www.youtube.com/watch?v=QYBE_vgmWjg" target="_blank"> <img src="https://i.ibb.co/SHHVjTs/demo.jpg" width="500" alt="SkillSwap Demo Video" /> </a> </p> <p align="center"> 🔗 <a href="https://www.youtube.com/watch?v=QYBE_vgmWjg" target="_blank"><strong>SkillSwap App | Swapping Your Skills According to Your Need</strong></a> </p>
 </p>
 
 ---
