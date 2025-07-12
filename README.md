@@ -193,7 +193,7 @@ skill-swap-backend/
 <h3 align="center">🧪 Postman Testing Preview</h3>
 
 <p align="center">
-  <img src="https://i.ibb.co/CKZqb54H/odooo.jpg" alt="Postman Testing Screenshot" width="700"/>
+  <img src="https://i.ibb.co/CKZqb54H/odooo.jpg" alt="Postman Testing Screenshot" width="400"/>
 </p>
 
 
