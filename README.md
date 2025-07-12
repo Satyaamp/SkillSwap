@@ -201,9 +201,25 @@ skill-swap-backend/
 
 ## 👥 Team
 
-* **Sayantan De**
-* **Himanshu Kumar Gupta**
-* **Satyam Kumar**
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://github.com/sayout-de003.png" width="100" style="border-radius: 50%"><br>
+      <strong>Sayantan De</strong><br>
+      <a href="https://github.com/sayout-de003">@sayout-de003</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/himasnhu018.png" width="100" style="border-radius: 50%"><br>
+      <strong>Himanshu Kumar Gupta</strong><br>
+      <a href="https://github.com/himasnhu018">@himasnhu018</a>
+    </td>
+    <td align="center">
+      <img src="https://github.com/Satyaamp.png" width="100" style="border-radius: 50%"><br>
+      <strong>Satyam Kumar</strong><br>
+      <a href="https://github.com/Satyaamp">@Satyaamp</a>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -213,8 +229,8 @@ You can easily deploy this backend to:
 
 * 🌐 [Render](https://render.com)
 * ⚡ [Railway](https://railway.app)
-* ☁️ [Vercel Serverless (Express adapter)](https://vercel.com)
 
-Supports `.env`, MongoDB Atlas, and REST clients like Postman or Axios.
+
+Supports `.env`, MongoDB Atlas, and REST clients like Postman or Axios
 
 
