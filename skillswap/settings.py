@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     'skills',
     'swaps',
     'dashboard',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    
 
 
 ]

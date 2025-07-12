@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Admin Dashboard</h2>
+
+<h3>Users</h3>
+<table border="1">
+<tr><th>Name</th><th>Banned?</th><th>Action</th></tr>
+{% for user in users %}
+<tr>
+  <td>{{ user.user.username }}</td>
+  <td>{{ user.is_banned }}</td>
+  <td><a href="{% url 'toggle_user_ban' user.user.id %}">
+    {% if user.is_banned %}Unban{% else %}Ban{% endif %}
+  </a></td>
+</tr>
+{% endfor %}
+</table>
+
+<h3>Skills</h3>
+<table border="1">
+<tr><th>Skill</th><th>User</th><th>Approved?</th><th>Action</th></tr>
+{% for skill in skills %}
+<tr>
+  <td>{{ skill.name }}</td>
+  <td>{{ skill.user.username }}</td>
+  <td>{{ skill.approved }}</td>
+  <td><a href="{% url 'toggle_skill_approval' skill.id %}">
+    {% if skill.approved %}Reject{% else %}Approve{% endif %}
+  </a></td>
+</tr>
+{% endfor %}
+</table>
+
+<h3>Actions</h3>
+<ul>
+  <li><a href="{% url 'broadcast_message' %}">Send Broadcast Message</a></li>
+  <li><a href="{% url 'export_data_csv' %}">Export Data (CSV)</a></li>
+</ul>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Swap Dashboard</h2>
+
+<h3>Received Requests</h3>
+<ul>
+  {% for swap in received %}
+    <li>
+      From: {{ swap.sender.username }} |
+      Skills: {{ swap.offered_skill.name }} → {{ swap.requested_skill.name }} |
+      Status: {{ swap.status }} |
+      {% if swap.status == 'pending' %}
+        <a href="{% url 'update_swap_status' swap.id 'accepted' %}">Accept</a> |
+        <a href="{% url 'update_swap_status' swap.id 'rejected' %}">Reject</a>
+      {% endif %}
+    </li>
+  {% empty %}
+    <li>No received requests</li>
+  {% endfor %}
+</ul>
+
+<h3>Sent Requests</h3>
+<ul>
+  {% for swap in sent %}
+    <li>
+      To: {{ swap.receiver.username }} |
+      Skills: {{ swap.offered_skill.name }} → {{ swap.requested_skill.name }} |
+      Status: {{ swap.status }} |
+      {% if swap.status == 'pending' %}
+        <a href="{% url 'cancel_swap' swap.id %}">Cancel</a>
+      {% endif %}
+    </li>
+  {% empty %}
+    <li>No sent requests</li>
+  {% endfor %}
+</ul>
+{% endblock %}
